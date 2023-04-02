@@ -21,4 +21,4 @@ class ProveedorForm(forms.Form):
     rubro = forms.CharField(max_length=100)
 
 class BuscarProveedoresForm(forms.Form):
-    criterio_razon_social = forms.CharField(max_length=100)
+    criterio_rubro = forms.CharField(max_length=100)
