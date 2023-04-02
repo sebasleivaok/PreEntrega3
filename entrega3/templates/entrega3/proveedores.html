@@ -1,0 +1,23 @@
+{% extends 'entrega3/base.html' %}
+
+{% block titulo %} Listado de Proveedores {% endblock %}
+
+{% block listado %}
+
+<form action="{% url 'proveedores-create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Guardar">
+</form>
+
+    <ul>
+        {% for proveedor in proveedores %}
+            <li>{{proveedor}}</li>            
+        {% endfor %}
+    </ul>
+</ul>
+
+
+{% endblock %}
+
+{% block title %} Proveedor {% endblock %}

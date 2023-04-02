@@ -1,0 +1,23 @@
+{% extends 'entrega3/base.html' %}
+
+{% block titulo %} Listado de Clientes {% endblock %}
+
+{% block listado %}
+
+<form action="{% url 'clientes-create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Guardar">
+</form>
+
+    <ul>
+        {% for cliente in clientes %}
+            <li>{{cliente}}</li>            
+        {% endfor %}
+    </ul>
+</ul>
+
+
+{% endblock %}
+
+{% block title %} Clientes {% endblock %}

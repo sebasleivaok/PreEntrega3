@@ -1,0 +1,23 @@
+{% extends 'entrega3/base.html' %}
+
+{% block titulo %} Listado de Articulos {% endblock %}
+
+{% block listado %}
+
+<form action="{% url 'articulos-create' %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Guardar">
+</form>
+
+    <ul>
+        {% for articulo in articulos %}
+            <li>{{articulo}}</li>            
+        {% endfor %}
+    </ul>
+</ul>
+
+
+{% endblock %}
+
+{% block title %} Articulos {% endblock %}
