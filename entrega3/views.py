@@ -122,5 +122,5 @@ class BuscarProveedores(ListView):
     def get_queryset(self):
         f = BuscarProveedoresForm(self.request.GET)
         if f.is_valid():
-           return Proveedor.objects.filter(nombre__icontains=f.data["criterio_rubro"]).all()
+           return Proveedor.objects.filter(rubro__icontains=f.data["criterio_rubro"]).all()
         return Proveedor.objects.none()

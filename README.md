@@ -1,4 +1,8 @@
-# COMO SE PRUEBA
-HOLA
+# Forma de Probar el Funcionamiento
+## Igreso de datos:
 
-## COMO SE PRUEBA 
+Ingresar a:
+
+
+
+
