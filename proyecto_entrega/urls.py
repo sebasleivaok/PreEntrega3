@@ -27,13 +27,13 @@ from entrega3.views import (mostrar_clientes,
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clientes/', mostrar_clientes, name="clientes"),
+    #path('clientes/', mostrar_clientes, name="clientes"),
     path('clientes/create/', crear_clientes, name="clientes-create"),
     path('clientes/list/', BuscarClientes.as_view(), name="clientes-list"),
-    path('articulos/', mostrar_articulos, name="articulos"),
+    #path('articulos/', mostrar_articulos, name="articulos"),
     path('articulos/create/', crear_articulos, name="articulos-create"),
     path('articulos/list/', BuscarArticulos.as_view(), name="articulos-list"),
-    path('proveedores/', mostrar_proveedores, name="proveedores"),
+    #path('proveedores/', mostrar_proveedores, name="proveedores"),
     path('proveedores/create/', crear_proveedores, name="proveedores-create"),
     path('proveedores/list/', BuscarProveedores.as_view(), name="proveedores-list"),
 ]
