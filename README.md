@@ -19,7 +19,7 @@ Aqui se cargan los Proveedores
 ## Buscar de datos:
 
 Ingresar a:
-http://127.0.0.1:8000/clientes/lisy/
+http://127.0.0.1:8000/clientes/list/
 
 Aqui se buscan los Clientes por nombre
 __________________________________________
